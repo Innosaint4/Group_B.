@@ -1,0 +1,65 @@
+#include <stdio.h>
+#include <stdlib.h>
+
+#include <stdio.h>
+#include <stdlib.h>
+
+/*int main(){
+int M,X,i;
+printf("Please enter the number of domestic animals!\n");
+scanf("%d",&M);
+char domestic[M][75];
+printf("Enter names of domestic animals\n",M);
+for(i=0; i<M; i++){
+scanf("%s",&domestic[i]);
+}
+printf("Please enter the number of domestic animals\n");
+scanf("%d",&X);
+char wild[X][50];
+printf("Enter names of wild animals\n ",X);
+for(i=0;i<X; i++){
+    scanf("%s",wild[i]);
+}
+printf("\nList of all animals\n");
+ for(i=0; i<M; i++){
+    printf("\nList of all animals\n");
+ }
+ for(i=0; i<M; i++){
+    printf("%s\n",domestic[i]);
+ }
+ for(i=0; i<X; i++){
+    printf("%s\n",wild[i]);
+ }
+
+    return 0;
+}
+*/
+int main(){
+float phy[4], chem[4], mtc[4];
+int i;
+float phy_avg, chem_avg, mtc_avg, overall_avg;
+printf("Enter marks for phy(assignment,coursework,midterm,end-term)\n");
+for(i=0; i<4; i++){
+ scanf("%f",&phy[1]);
+}
+printf("Enter marks for chem(assignment,coursework,midterm,end-term\n");
+for(i=0; i<4; i++){
+scanf("%f",&chem[1]);
+}
+printf("Enter marks for mtc(assignment,coursework,midterm,end-term\n");
+for(i=0; i<4; i++){
+scanf("%f",&mtc[1]);
+}
+phy_avg=(phy[0]+phy[1]+phy[2]+phy[3])/4;
+chem_avg=(chem[0]+chem[1]+chem[2]+chem[3])/4;
+mtc_avg=(mtc[0]+mtc[1]+mtc[2]+mtc[3])/4;
+overall_avg=(phy_avg+ chem_avg+mtc_avg)/3;
+printf("\naverage marks\n");
+printf("physics%.2f\n",phy_avg);
+printf("chemistry%.2f\n",chem_avg);
+printf("mathematics%.2f\n",mtc_avg);
+printf("overall average%.2f\n",overall_avg);
+
+return 0;
+}
+
